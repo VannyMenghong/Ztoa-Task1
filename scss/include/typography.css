@@ -1,0 +1,42 @@
+.font-oswald {
+  font-family: "Oswald", sans-serif;
+}
+
+.bg-black {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3c4146), to(#21282e));
+  background-image: linear-gradient(180deg, #3c4146, #21282e);
+}
+
+.bg-mediumBlack {
+  background-color: #3D0000;
+}
+
+.bg-maroon {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e75816), to(#a83906));
+  background-image: linear-gradient(180deg, #e75816, #a83906);
+}
+
+.text-maroon {
+  color: #e55a19;
+}
+
+.bg-red {
+  background-color: #FF0000;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.medium {
+  font-size: 16px;
+}
+
+.larg {
+  font-size: 18px;
+}
+
+.bold {
+  font-weight: 550;
+}
+/*# sourceMappingURL=typography.css.map */

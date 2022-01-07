@@ -1,0 +1,47 @@
+@import 'variable.scss';
+
+.font-oswald {
+    font-family: $font-oswald;
+}
+
+.bg-black{
+    background-image: $color-black;
+}
+
+.bg-mediumBlack{
+    background-color: $color-mediumBlack;
+}
+
+.bg-maroon{
+    background-image: $bg-maroon;
+}
+
+
+.text-maroon{
+    color: $color-maroon;
+}
+
+.bg-red{
+    background-color: $color-red;
+}
+
+.small{
+    font-size: $font-small; 
+}
+
+.medium{
+    font-size : $font-medium;
+}
+
+.larg{
+    font-size : $font-larg;
+}
+
+.bold{
+    font-weight: $font-bold;
+}
+
+
+
+
+

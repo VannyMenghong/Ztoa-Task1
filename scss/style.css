@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@320&display=swap");
+/* SASS Template */
+/*   global   */
+button, button:focus {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.font-oswald {
+  font-family: "Oswald", sans-serif;
+}
+
+.bg-black {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3c4146), to(#21282e));
+  background-image: linear-gradient(180deg, #3c4146, #21282e);
+}
+
+.bg-mediumBlack {
+  background-color: #3D0000;
+}
+
+.bg-maroon {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e75816), to(#a83906));
+  background-image: linear-gradient(180deg, #e75816, #a83906);
+}
+
+.text-maroon {
+  color: #e55a19;
+}
+
+.bg-red {
+  background-color: #FF0000;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.medium {
+  font-size: 16px;
+}
+
+.larg {
+  font-size: 18px;
+}
+
+.bold {
+  font-weight: 550;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+/*___Top___*/
+.bg-image {
+  background-image: url("../image/bg-body.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.top-details li {
+  margin-left: 20px;
+}
+
+.top-details li a {
+  color: white;
+  font-weight: 580;
+  text-decoration: none;
+}
+
+.top-details li a:hover {
+  color: #e55a19;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.search-box {
+  outline: none;
+  border: 1px solid #797676;
+  width: 80%;
+  background-color: transparent;
+  color: white;
+}
+
+.border-grey {
+  border: 1px solid #4e4e4e;
+}
+
+.top-logo {
+  height: 40px;
+}
+
+.navigation {
+  border-top: 1px solid #616060;
+}
+
+.navigation li {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.contact p {
+  margin-top: 11px;
+}
+
+/*_____dropdown Menu_____*/
+#dropdown {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#dropdown li {
+  margin-left: 0;
+}
+
+#dropdown li:hover {
+  background-color: #333332;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
+}
+
+#dropdown.show {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/*_____dropdown Menu under 1000px____*/
+.menu2 {
+  position: relative;
+}
+
+.dropdonwMenu2 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3e4952), to(#21282e));
+  background-image: linear-gradient(180deg, #3e4952, #21282e);
+  width: 100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.dropdonwMenu2 li {
+  border-bottom: 1px solid #3f3e3e;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.dropdonwMenu2 li:hover {
+  background-color: #333332;
+  margin-left: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.menu2 {
+  display: none;
+}
+
+.menu2 .dropdonwMenu2 {
+  opacity: 0;
+}
+
+.dropdonwMenu2.show2 {
+  opacity: 1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#bars {
+  cursor: pointer;
+}
+
+/*_____Main Image/Text Content____*/
+#text-content {
+  line-height: 75px;
+  font-size: 60pt;
+}
+
+/*______Lastest Product_____*/
+#lastest-product {
+  background-image: url("../image/bg4.png");
+  height: 500px;
+}
+
+/*Responsive */
+@media only screen and (max-width: 1000px) {
+  .contact, .navigation, .drop-item {
+    display: none;
+  }
+  .menu2 {
+    display: block;
+    z-index: 10;
+  }
+  #text-content {
+    line-height: 50px;
+    font-size: 30pt;
+  }
+}
+
+@media only screen and (max-width: 578px) {
+  .top-details-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .top-details-info .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .top-details-info .nav li {
+    margin: 5px 20px;
+  }
+  #text-content {
+    line-height: 24px;
+    font-size: 15pt;
+  }
+}
+/*# sourceMappingURL=style.css.map */

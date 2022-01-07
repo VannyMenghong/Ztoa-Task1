@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@320&display=swap');
+
+/* SASS Template */
+@import 'include/global.scss';
+@import 'include/typography.scss';
+@import 'include/variable.scss';
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    font-family:$font-oswald;
+}
+
+/*___Top___*/
+
+.bg-image{
+        background-image: url("../image/bg-body.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+
+}
+
+.top-details li{
+    margin-left:20px;
+    a{
+        color:white;
+        font-weight: 580;
+        text-decoration: none;
+    }
+    a:hover{
+        color:$color-maroon;
+        transition:0.3s;
+    }
+}
+
+
+
+.search-box{
+    outline: none;
+    border: 1px solid rgb(121, 118, 118);
+    width: 80%;
+    background-color: transparent;
+    color:white;
+}
+
+.border-grey{
+    border:1px solid rgb(78, 78, 78);
+}
+
+.top-logo{
+    height:40px;
+}
+
+.navigation{
+    border-top: 1px solid rgb(97, 96, 96);
+}
+.navigation li{
+        margin-top:10px;
+        margin-right:10px;
+      
+}
+
+.contact p {
+    margin-top:11px;
+}
+
+
+/*_____dropdown Menu_____*/
+#dropdown {
+    opacity: 0;
+    transition: 0.3s;
+   
+}
+
+#dropdown li{
+    margin-left: 0;
+}
+
+#dropdown li:hover{
+    background-color: rgb(51, 51, 50);
+    transition: 0.3s;
+    width:100%;
+}
+
+
+
+#dropdown.show{
+    opacity: 1;
+    transition: 0.3s;
+    
+}
+
+
+/*_____dropdown Menu under 1000px____*/
+.menu2{
+    position:relative;
+    
+}
+.dropdonwMenu2{
+    position:absolute;
+    top:100%;
+    left:0;
+    background-image: linear-gradient(180deg, rgb(62, 73, 82), rgb(33, 40, 46));
+    width:100%;
+    transition:0.4s;
+}
+
+.dropdonwMenu2 li{
+    border-bottom: 1px solid rgb(63, 62, 62);
+    transition: 0.4s;
+}
+
+.dropdonwMenu2 li:hover{
+    background-color:rgb(51, 51, 50);
+    margin-left:0;
+    transition: 0.4s;
+   
+}
+
+
+.menu2{
+    display:none;   
+}
+
+.menu2 .dropdonwMenu2{
+    opacity: 0;
+}
+
+.dropdonwMenu2.show2{
+   opacity: 1;
+    transition:0.4s;
+}
+
+
+#bars{
+    cursor: pointer;
+}
+
+/*_____Main Image/Text Content____*/
+#text-content{
+    line-height: 75px;
+    font-size:60pt;
+      
+}
+
+
+/*______Lastest Product_____*/
+#lastest-product{
+    background-image: url("../image/bg4.png");
+    
+    
+    height:500px;
+}
+
+
+/*Responsive */
+@media only screen and ( max-width:1000px){
+    .contact, .navigation, .drop-item{
+        display:none;
+    }
+
+    .menu2{
+        display: block;
+        z-index: 10;
+    }
+
+    #text-content{
+        line-height:50px;
+        font-size:30pt;
+        
+    }
+   
+}
+    
+
+
+
+@media only screen and ( max-width:578px){
+    .top-details-info{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top-details-info .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+    }
+
+    .top-details-info .nav li{
+        margin:5px 20px;
+    }
+
+    #text-content{
+        line-height: 24px;
+        font-size:15pt;
+    }
+
+   
+    
+}
