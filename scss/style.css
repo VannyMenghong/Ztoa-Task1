@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@320&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400&display=swap");
 /* SASS Template */
 /*   global   */
 button, button:focus {
@@ -65,7 +65,6 @@ body {
   background-image: url("../image/bg-body.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
 .top-details li {
@@ -190,10 +189,29 @@ body {
   font-size: 60pt;
 }
 
+.main-text {
+  margin-left: -5%;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 100%;
+}
+
 /*______Lastest Product_____*/
 #lastest-product {
   background-image: url("../image/bg4.png");
   height: 500px;
+}
+
+.go-icon {
+  background-color: #e55a19;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.go-icon:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3c4146), to(#21282e));
+  background-image: linear-gradient(180deg, #3c4146, #21282e);
 }
 
 /*Responsive */
@@ -208,6 +226,9 @@ body {
   #text-content {
     line-height: 50px;
     font-size: 30pt;
+  }
+  .main-text {
+    margin-left: -27%;
   }
 }
 
@@ -240,6 +261,10 @@ body {
   #text-content {
     line-height: 24px;
     font-size: 15pt;
+  }
+  .main-text {
+    font-size: 30px;
+    margin-left: -30%;
   }
 }
 /*# sourceMappingURL=style.css.map */
