@@ -1,4 +1,4 @@
-//Categorie hover 
+//navigation categories 
 let menu = document.querySelector('#menu');
 let dropdownMenu = document.querySelector('#dropdown');
 
@@ -6,7 +6,7 @@ menu.addEventListener('click', function () {
     dropdownMenu.classList.toggle('show')
 })
 
-//responsive bar 
+//responsive navigation 
 let bars = document.querySelector('#bars');
 let dropdownMenu2 = document.querySelectorAll('.dropdonwMenu2');
 

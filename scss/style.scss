@@ -164,14 +164,118 @@ body{
 }
 
 .go-icon{
-    background-color:#e55a19;
+    background-image: linear-gradient(180deg, #e75816, #a83906);
     opacity: 1;
     transition: 0.2s;
+    position:absolute;
+    bottom:10%;
+    padding:9px 15px;
 }
+
+.left{
+    right:51%;
+}
+
+
 .go-icon:hover{
     background-image:linear-gradient(180deg, rgb(60, 65, 70), rgb(33, 40, 46));
     
 }
+
+/*______hover_________*/
+.item1{
+    border:1px solid rgb(224, 224, 224);
+    
+}
+
+.item1:hover{
+    border:2px solid $color-maroon;
+    transition: 0.4s;
+}
+
+.item1:hover .cart-icon{
+    transition: 0.4s;
+    display: block;
+    
+}
+
+.item1:hover .product-price{
+    transition: 0.4s;
+    display: none;
+   
+}
+
+/*_____product price_____*/
+
+
+/*______add to cart Icon_________*/
+.cart-icon{
+    cursor:pointer;
+    display:none;
+    margin-top:55px;
+    
+}
+
+.cart-icon:hover{
+    background-image: linear-gradient(180deg, #e75816, #a83906);
+    color: white;
+    transition: 0.4s;
+
+}
+
+
+/*______below lastest products_____*/
+.bg-2{
+    background-image: url("../image/bg2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom:4rem;
+    .looking{
+        font-weight: 900;
+        color: $color-maroon;
+        .check{
+            color: rgb(16, 86, 169);
+        }
+        .read-more{
+            padding:15px 30px;
+            background-image:linear-gradient(180deg, rgb(18, 115, 211), rgb(9, 62, 128));
+            color: white;
+            font-size: $font-larg;
+            cursor: pointer;
+        }
+        .read-more:hover{
+            background-image: linear-gradient(180deg, #f37d47, #a83906 );
+        }
+    }
+}
+
+
+/*_____feature-product_______*/
+.feature-product {
+    color: white;
+    margin-bottom:50px;
+    h5{
+        font-size:20px;
+    }
+    h5:first-child{
+       
+       margin-right:15px;
+    }
+    .dis{
+        color:$color-maroon;
+    }
+    .search{
+        margin-right:20px;
+    }
+    .btn-ok{
+        background-image: linear-gradient(180deg, #f37d47, #a83906 );
+        padding: 10px 10px;
+        border:none;
+        font-size: $font-larg;
+        cursor: pointer;
+    }
+}
+
 
 
 /*Responsive */
@@ -193,6 +297,13 @@ body{
 
     .main-text{
         margin-left:-27%;
+    }
+
+    .bg-2 .looking{
+        font-size:50px;
+        .read-more{
+            font-size: 18px;
+        }
     }
    
 }
@@ -229,5 +340,10 @@ body{
         margin-left:-30%;
     }
    
-    
+    .bg-2 .looking{
+        font-size:40px;
+        .read-more{
+            font-size: 15px;
+        }
+    }
 }
