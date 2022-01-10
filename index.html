@@ -32,7 +32,7 @@
 
 <body>
     <!---_____Top Content____-->
-    <div class="bg-image border-bottom">
+    <div class="bg-image border-bottom ">
         <div class="container px-0 py-2  text-white top-details ">
             <!--_____TOP details_____-->
             <div class="d-flex justify-content-between small  top-details-info mx-3">
@@ -42,8 +42,14 @@
                     <li><a href="#">Shopping Cart</a></li>
                     <li><a href="#">Checkout</a></li>
                 </div>
-                <div class="mr-3">
-                    <span class="fa fa-dollar " style="cursor:pointer"> <i class="fa fa-angle-down larg "></i></span>
+                <div class="mr-3 currency-div">
+                    <span class="fa fa-dollar currency"> <i class="fa fa-angle-down larg "></i></span>
+                    <span class="triangle-up mt-2"></span>
+                    <ul class="nav flex-column  currency-items ">
+                        <li><a href="#">Euro</a></li>
+                        <li><a href="#">Porund</a></li>
+                        <li><a href="#">dollar</a></li>
+                    </ul>
                 </div>
             </div>
 
@@ -59,15 +65,62 @@
                         <img src="image/logo.png" class="img-fluid top-logo" alt="">
                     </div>
                     <div
-                        class="col-12 col-sm-12 col-md-4 d-flex   align-items-center mt-2   justify-content-md-center justify-content-center  ">
-                        <p class="font-oswald"><span class="fa fa-user medium  border-grey p-1 "></span>
-                            &nbsp;&nbsp;&nbsp;<span class="fa fa-shopping-cart medium  border-grey  py-1 px-2"
+                        class=" col-12 col-sm-12 col-md-4 d-flex  parent-cart-icon  align-items-center mt-2   justify-content-md-center justify-content-center ">
+
+                        <p class="font-oswald "><span class="fa fa-user medium  border-grey p-1 "></span>
+                            &nbsp;&nbsp;&nbsp;<span
+                                class="fa fa-shopping-cart cart-click-area medium cart-icon-box  border-grey  py-1 px-2"
                                 style="position: relative;">&nbsp;&nbsp;<span
                                     class=" small text-maroon font-oswald">&nbsp;$ 0.00 </span>&nbsp;<i
-                                    class="fa fa-angle-down"></i>
+                                    class="fa fa-angle-down cart-click-area"></i>
                                 <span class=" bg-maroon small"
                                     style="padding:2px 4px; position:absolute;left:-4%;">0</span></span>
+
                         </p>
+                        <span class="triangle-up2 mt-3  "></span>
+                        <div class="  cart-list shadow  px-4 py-2 border-bottom  flex-column   bg-white text-dark">
+                            <div class="d-flex justify-content-between align-items-center  py-1">
+                                <img src="image/pro1.jpg" class="img-fluid " alt="">
+                                <span class="medium">Skiing Shoes</span>
+                                <span class="medium">x 1</span>
+                                <span class="medium text-maroon">$99.99</span>
+                                <span class=" larg text-danger ">X</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center border-bottom  py-1">
+                                <img src="image/pro2.jpg" class="img-fluid " alt="">
+                                <span class="medium">Helmet</span>
+                                <span class="medium">x 2</span>
+                                <span class="medium text-maroon">$49.99</span>
+                                <span class=" larg text-danger ">X</span>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center   py-3">
+                                <div class="col-md-3  d-flex flex-column text-right medium line-height total-details">
+                                    <p>Sub-Total:</p>
+                                    <p>Eco Tax (-2.00):</p>
+                                    <p>VAT (20%):</p>
+                                    <p>Total:</p>
+                                    <a href="#">
+                                        <div class=" small view-cart-btn text-center">
+                                            CART
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3   d-flex flex-column text-right medium line-height total-details ">
+                                    <p>$1,200.00</p>
+                                    <p>$8.00</p>
+                                    <p>$240.00</p>
+                                    <p>$1,448.00</p>
+                                    <a href="#">
+                                        <div class="b small Checkout-cart-btn text-center">
+                                            CHECKOUT
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+
                     </div>
 
                     <!--____ Navigation____-->
@@ -326,8 +379,8 @@
 
 
     <!--_____Featured products_____-->
-    <div class="container-fluid" id="lastest-product">
-        <div class="container my-5 ">
+    <div class="container-fluid" id="lastest-product ">
+        <div class="container my-4 ">
             <div class="text-center">
                 <h5><span style="border-bottom: 3px solid #e55a19;">Featured products</span></h5>
             </div>
@@ -336,7 +389,7 @@
                     <img src="image/pro1.jpg" class="img-fluid " alt="">
                     <p class="medium mt-3 product-price">HP LP3045<br><span class="text-maroon">$122.00</span></p>
                     <div class="d-flex">
-                        <span class="fa fa-shopping-cart p-2 border cart-icon larg"></span>
+                        <span class="fa fa-shopping-cart p-2 border cart-icon1 cart-icon larg"></span>
                         <span class="fa fa-search p-2 border larg cart-icon"></span>
                     </div>
                 </div>
@@ -344,7 +397,7 @@
                     <img src="image/pro2.jpg" class="img-fluid" alt="">
                     <p class="medium mt-3 product-price">HP LP3045<br><span class="text-maroon">$122.00</span></p>
                     <div class="d-flex">
-                        <span class="fa fa-shopping-cart p-2 border cart-icon larg"></span>
+                        <span class="fa fa-shopping-cart p-2 border cart-icon1 cart-icon larg"></span>
                         <span class="fa fa-search p-2 border larg cart-icon"></span>
                     </div>
                 </div>
@@ -352,7 +405,7 @@
                     <img src="image/pro3.jpg" class="img-fluid" alt="">
                     <p class="medium mt-3 product-price">HP LP3045<br><span class="text-maroon">$122.00</span></p>
                     <div class="d-flex">
-                        <span class="fa fa-shopping-cart p-2 border cart-icon larg"></span>
+                        <span class="fa fa-shopping-cart p-2 border cart-icon1 cart-icon larg"></span>
                         <span class="fa fa-search p-2 border larg cart-icon"></span>
                     </div>
                 </div>
@@ -360,7 +413,7 @@
                     <img src="image/pro4.jpg" class="img-fluid" alt="">
                     <p class="medium mt-3 product-price">HP LP3045<br><span class="text-maroon">$122.00</span></p>
                     <div class="d-flex">
-                        <span class="fa fa-shopping-cart p-2 border cart-icon larg"></span>
+                        <span class="fa fa-shopping-cart p-2 border cart-icon1 cart-icon larg"></span>
                         <span class="fa fa-search p-2 border larg cart-icon"></span>
                     </div>
                 </div>
@@ -368,7 +421,7 @@
                     <img src="image/pro5.jpg" class="img-fluid" alt="">
                     <p class="medium mt-3 product-price">HP LP3045<br><span class="text-maroon">$122.00</span></p>
                     <div class="d-flex">
-                        <span class="fa fa-shopping-cart p-2 border cart-icon larg"></span>
+                        <span class="fa fa-shopping-cart p-2 border cart-icon1 cart-icon larg"></span>
                         <span class="fa fa-search p-2 border larg cart-icon"></span>
                     </div>
                 </div>
@@ -376,7 +429,7 @@
                     <img src="image/pro6.jpg" class="img-fluid" alt="">
                     <p class="medium mt-3 product-price">HP LP3045<br><span class="text-maroon">$122.00</span></p>
                     <div class="d-flex">
-                        <span class="fa fa-shopping-cart p-2 border cart-icon larg"></span>
+                        <span class="fa fa-shopping-cart p-2 border cart-icon1 cart-icon larg"></span>
                         <span class="fa fa-search p-2 border larg cart-icon"></span>
                     </div>
                 </div>
@@ -384,7 +437,7 @@
                     <img src="image/pro2.jpg" class="img-fluid" alt="">
                     <p class="medium mt-3 product-price">HP LP3045<br><span class="text-maroon">$122.00</span></p>
                     <div class="d-flex">
-                        <span class="fa fa-shopping-cart p-2 border cart-icon larg"></span>
+                        <span class="fa fa-shopping-cart p-2 border cart-icon1 cart-icon larg"></span>
                         <span class="fa fa-search p-2 border larg cart-icon"></span>
                     </div>
                 </div>
@@ -392,7 +445,7 @@
                     <img src="image/pro8.jpg" class="img-fluid" alt="">
                     <p class="medium mt-3 product-price">HP LP3045<br><span class="text-maroon">$122.00</span></p>
                     <div class="d-flex">
-                        <span class="fa fa-shopping-cart p-2 border cart-icon larg"></span>
+                        <span class="fa fa-shopping-cart p-2 border cart-icon1 cart-icon larg"></span>
                         <span class="fa fa-search p-2 border larg cart-icon"></span>
                     </div>
                 </div>
@@ -400,7 +453,7 @@
                     <img src="image/pro9.jpg" class="img-fluid" alt="">
                     <p class="medium mt-3 product-price">HP LP3045<br><span class="text-maroon">$122.00</span></p>
                     <div class="d-flex">
-                        <span class="fa fa-shopping-cart p-2 border cart-icon larg"></span>
+                        <span class="fa fa-shopping-cart p-2 border cart-icon1 cart-icon larg"></span>
                         <span class="fa fa-search p-2 border larg cart-icon"></span>
                     </div>
                 </div>
@@ -408,8 +461,8 @@
                     <img src="image/pro10.jpg" class="img-fluid" alt="">
                     <p class="medium mt-3 product-price">HP LP3045<br><span class="text-maroon">$122.00</span></p>
                     <div class="d-flex">
-                        <span class="fa fa-shopping-cart p-2 border cart-icon larg"></span>
-                        <span class="fa fa-search p-2 border larg cart-icon"></span>
+                        <span class="fa fa-shopping-cart p-2 border cart-icon1 cart-icon larg"></span>
+                        <span class="fa fa-search p-2 border larg cart-icon cart-icon"></span>
                     </div>
                 </div>
             </div>
@@ -418,17 +471,118 @@
 
         <div class="container feature-product">
             <div
-                class="d-flex flex-sm-column justify-content-sm-center flex-column flex-lg-row justify-content-lg-between bg-black py-2 px-4 ">
+                class="d-flex flex-sm-column justify-content-sm-center flex-column flex-lg-row justify-content-lg-between bg-black py-3 px-4 ">
                 <div
                     class="d-flex flex-sm-column text-center  flex-lg-row justify-content-center flex-column align-items-center">
                     <h5>Subscribe to our Newsletter </h5>
                     <h5 class="dis"> Get 25% discount for first buy</h5>
                 </div>
                 <div class=" justify-content-sm-center justify-content-center d-flex ">
-                    <input type=" search" placeholder="    youre e-mail" class="medium py-1 px-1 search">
+                    <input type=" search" placeholder="    your e-mail" class="medium w-100 search">
                     <button class="btn-ok">OK</button>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!--_____Footer_____-->
+    <div class="container-fluid footer   mt-4 mb-3">
+        <div class="container    ">
+            <div class="row top-row-contact border ">
+                <div class="col-12 col-sm-12 col-md-4 d-flex justify-content-md-center py-md-3 py-2 ">
+                    <img src="image/icon-mail.png" class="img-fluid big-img-icon" alt="">
+                    <div class="d-flex    ">
+                        <h5 class="text-maroon larg big-img-icon-text question ">Do you have any
+                            question?<br><span class="medium text-dark">email.example@gmail.com </span></h5>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 d-flex justify-content-md-center py-md-3 py-2 ">
+                    <img src="image/icon-phone2.png" class="img-fluid big-img-icon mt-1" alt="">
+                    <div class="d-flex    ">
+                        <h5 class="text-maroon larg big-img-icon-text " style="margin-top:10px; margin-left:5px;">
+                            800-140-100<br><span class="medium text-dark">Mon - Fri: 8:00 - 17:00</span></h5>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 d-flex justify-content-md-center py-md-3 py-2 ">
+                    <div class=" d-flex justify-content-center align-items-center">
+                        <h5 class="medium py-1 px-3      text-white contact-form">CONTACT FORM</h5>
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-sm-12 col-md-3 d-flex  py-2 py-md-3 px-4 border flex-column justify-content-center">
+                    <img src="image/logo-footer.png" class="img-fluid w-75 mb-3 " alt="">
+                    <p class="medium">PO Box 16122 Collins Street <br>Victoria 8007 Australia</p>
+                </div>
+                <div
+                    class="col-12 col-sm-12 col-md-3 d-flex  py-2 py-md-3 px-4 border  flex-column justify-content-center">
+                    <p><span class="border-bottom border-danger border-3 larg">Information</span></p>
+                    <ul class="nav flex-column medium ">
+                        <li><a href="#" class=" nav-link nav-link-footer">About
+                                us</a>
+                        </li>
+                        <li><a href="#" class=" nav-link nav-link-footer">Delivery
+                                information</a>
+                        </li>
+                        <li><a href="#" class=" nav-link nav-link-footer">Privacy
+                                Policy</a></li>
+                    </ul>
+                </div>
+                <div
+                    class="col-12 col-sm-12 col-md-3 d-flex  py-2 py-md-3 px-4 border flex-column justify-content-center">
+                    <p><span class="border-bottom border-danger  border-3 larg">My account</span></p>
+                    <ul class="nav flex-column medium ">
+                        <li><a href="#" class=" nav-link nav-link-footer">My
+                                account</a>
+                        </li>
+                        <li><a href="#" class=" nav-link nav-link-footer">Order
+                                History</a>
+                        </li>
+                        <li><a href="#" class=" nav-link nav-link-footer">Wish
+                                List</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 d-flex  py-3 px-4 border flex-column justify-content-center">
+                    <p><span class="border-bottom border-danger border-3 larg">Custom links</span></p>
+                    <ul class="nav flex-column medium ">
+                        <li><a href="#" class="  nav-link nav-link-footer ">Terms &
+                                Conditions</a>
+                        </li>
+                        <li><a href="#" class="  nav-link nav-link-footer">Contact
+                                Us</a>
+                        </li>
+                        <li><a href="#" class="  nav-link nav-link-footer">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 d-flex justify-content-md-center py-md-3 py-2 ">
+                    <img src="image/icon-free-shipping.png" class="img-icon img-fluid ml-1" alt="">
+                    <div class="d-flex    ">
+                        <h5 class="text-maroon medium question ">Free shipping & Return<br><span
+                                class="small text-dark">For all orders over $500 </span></h5>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 d-flex justify-content-md-center py-md-3 py-2 ">
+                    <img src="image/icon-money.png" class="img-fluid img-icon ml-1" alt="">
+                    <div class="d-flex    ">
+                        <h5 class="text-maroon medium mt-2 ">Money back
+                            guarantee<br><span class="small text-dark">
+                                Money back guarantee
+
+                                100% money back guarante
+                            </span></h5>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 d-flex justify-content-md-center py-md-3 py-2 ">
+                    <img src="image/icon-support.png" class="img-fluid img-icon ml-1" alt="">
+                    <div class="d-flex    ">
+                        <h5 class="text-maroon medium mt-2 ">Support 24/7<br><span class="small text-dark">
+                                We answer for question all time
+                            </span></h5>
+                    </div>
+                </div>
+            </div>
+            <b class="small">
+                <hr>Copyright © 2015, Your Store, All Rights Reserved.
+            </b>
         </div>
     </div>
 
@@ -449,40 +603,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: false,
-            nav: true,
-            navText: ["<span class='fa fa-angle-left go-icon left'  style=''></span>", "<span class='go-icon fa fa-angle-right' style=''></span>"],
-            dots: false,
-            autoplay: true,
-            loop: true,
-            interval: 100,
-
-            responsive: {
-                0: {
-                    items: 2
-                },
-                600: {
-                    items: 2
-                },
-                770: {
-                    items: 4
-                },
-                1000: {
-                    items: 6,
-
-                }
-            }
-        })
-
-        //tooltip function
-        $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
+    <script src="js/index.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/cartItems.js"></script>
 
 </body>
 
