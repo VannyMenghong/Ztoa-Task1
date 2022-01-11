@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+
+    <!-- Bootstrap 4 cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font-awesome cdn -->
+    <script src="https://use.fontawesome.com/dd85ee8937.js"></script>
+
+
+    <!-- Owel Carousel 2 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="scss/style.css">
+
+</head>
+
+<body>
+    <!---_____Top Content____-->
+    <div class="bg-image border-bottom ">
+        <div class="container px-0 py-2  text-white top-details ">
+            <!--_____TOP details_____-->
+            <div class="d-flex justify-content-between small  top-details-info mx-3">
+                <div class="nav">
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Wish List(0)</a></li>
+                    <li><a href="#">Shopping Cart</a></li>
+                    <li><a href="#">Checkout</a></li>
+                </div>
+                <div class="mr-3 currency-div">
+                    <span class="fa fa-dollar currency"> <i class="fa fa-angle-down larg "></i></span>
+                    <span class="triangle-up mt-2"></span>
+                    <ul class="nav flex-column  currency-items ">
+                        <li><a href="#">Euro</a></li>
+                        <li><a href="#">Porund</a></li>
+                        <li><a href="#">dollar</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--____Navigation Content____-->
+            <div class="container p-0 mt-2 ">
+                <div class="row bg-black pt-2" id="main-navigation">
+
+                    <div class="col-12 col-sm-12 col-md-4 d-flex justify-content-center align-items-center small my-3 ">
+                        <input type="search" placeholder="Search" class=" search-box p-2 " style="cursor:pointer">
+                        <span class="fa fa-search" style="margin-left:-40px;"></span>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 d-flex justify-content-center align-items-center ">
+                        <img src="image/logo.png" class="img-fluid top-logo" alt="">
+                    </div>
+                    <div
+                        class=" col-12 col-sm-12 col-md-4 d-flex  parent-cart-icon  align-items-center mt-2   justify-content-md-center justify-content-center ">
+
+                        <p class="font-oswald "><span class="fa fa-user medium  border-grey p-1 "></span>
+                            &nbsp;&nbsp;&nbsp;<span
+                                class="fa fa-shopping-cart cart-click-area medium cart-icon-box  border-grey  py-1 px-2"
+                                style="position: relative;">&nbsp;&nbsp;<span
+                                    class=" small text-maroon font-oswald">&nbsp;$ 0.00 </span>&nbsp;<i
+                                    class="fa fa-angle-down cart-click-area"></i>
+                                <span class=" bg-maroon small"
+                                    style="padding:2px 4px; position:absolute;left:-4%;">0</span></span>
+
+                        </p>
+                        <span class="triangle-up2 mt-3  "></span>
+                        <div class="  cart-list shadow  px-4 py-2 border-bottom  flex-column   bg-white text-dark">
+                            <div class="d-flex justify-content-between align-items-center  py-1">
+                                <img src="image/pro1.jpg" class="img-fluid " alt="">
+                                <span class="medium">Skiing Shoes</span>
+                                <span class="medium">x 1</span>
+                                <span class="medium text-maroon">$99.99</span>
+                                <span class=" larg text-danger ">X</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center border-bottom  py-1">
+                                <img src="image/pro2.jpg" class="img-fluid " alt="">
+                                <span class="medium">Helmet</span>
+                                <span class="medium">x 2</span>
+                                <span class="medium text-maroon">$49.99</span>
+                                <span class=" larg text-danger ">X</span>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center   py-3">
+                                <div class="col-md-3  d-flex flex-column text-right medium line-height total-details">
+                                    <p>Sub-Total:</p>
+                                    <p>Eco Tax (-2.00):</p>
+                                    <p>VAT (20%):</p>
+                                    <p>Total:</p>
+                                    <a href="#">
+                                        <div class=" small view-cart-btn text-center">
+                                            CART
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3   d-flex flex-column text-right medium line-height total-details ">
+                                    <p>$1,200.00</p>
+                                    <p>$8.00</p>
+                                    <p>$240.00</p>
+                                    <p>$1,448.00</p>
+                                    <a href="#">
+                                        <div class="b small Checkout-cart-btn text-center">
+                                            CHECKOUT
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!--____ Navigation____-->
+                    <div class="col-3 col-md-3 bg-maroon d-flex  align-items-center categorie border-top"
+                        style="cursor:pointer;position: relative;" id="menu">
+                        <li class="medium py-2 ml-4  drop-item">
+                            Categories &nbsp;&nbsp; <i class="fa fa-angle-down"></i>
+                        </li>
+                        <ul class="nav flex-column bg-black small" id="dropdown"
+                            style="position:absolute;left:0;top:100%;width:100%;z-index: 10;">
+                            <li class="nav-item  border-bottom border-secondary">
+                                <a href="#" class="nav-link  ">Men &nbsp;
+                                    &nbsp; <sup class="small bg-maroon " style="padding:3px;">NEW</sup></a>
+                            </li>
+                            <li class="nav-item  border-bottom border-secondary">
+                                <a href="#" class="nav-link ">Women</a>
+                            </li>
+                            <li class="nav-item  border-bottom border-secondary">
+                                <a href="#" class="nav-link ">Accessories</a>
+                            </li>
+                            <li class="nav-item  border-bottom border-secondary">
+                                <a href="#" class="nav-link ">LookBook</a>
+                            </li>
+                            <li class="nav-item border-bottom border-secondary">
+                                <a href="#" class="nav-link ">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-6 navigation border-top ">
+                        <div class="nav medium d-flex justify-content-center">
+                            <li style="position:relative;"><a href="#">Latest Products</a><span
+                                    class="small bg-primary "
+                                    style="position:absolute;top:-90%;left:0%;padding:0px 7px;">NEW</span>
+                            </li>
+                            <li style="position:relative;"><a href="#">Sale</a>
+                                <span class="small bg-danger "
+                                    style="position:absolute;top:-90%;left:0%;padding:0px 10px;font-weight: 500;">Hot</span>
+                            </li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-3 bg-black contact border-top">
+                        <div class="medium d-flex  align-items-center justify-content-center">
+                            <p class="text-maroon"><span class="fa fa-phone"></span>&nbsp;&nbsp;Contact us: <span
+                                    class="text-white">+885-77-64-59-94</span>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-12 py-2 menu2">
+                        <div class="  w-100 d-flex justify-content-between">
+                            <p class="medium ml-4 nav ">Navigation</p>
+                            <span class="fa fa-bars mr-3 " id="bars"></span>
+                            <ul class="small nav flex-column dropdonwMenu2">
+                                <li class="d-flex"><a href="#" class="nav-link">Latest Products </a>
+                                    <p class="small bg-primary " style="padding:0px 10px;font-weight: 500;">NEW</p>
+                                </li>
+                                <li class="d-flex"><a href="#" class="nav-link">Sale</a>
+                                    <p class="small bg-danger " style="padding:0px 10px;font-weight: 500;">Hot</p>
+                                </li>
+                                <li><a href="#" class="nav-link">About Us</a></li>
+                                <li><a href="#" class="nav-link">Testimonials</a></li>
+                                <li><a href="#" class="nav-link">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--_____produsts_____-->
+        <div class="container products py-3">
+            <div class="text-center">
+                <h5><span class=" border-bottom border-danger border-3 big">Desktop</span></h5>
+                <h5 class="medium"><span>Home</span>&nbsp;<span
+                        class="fa fa-angle-right"></span>&nbsp;<span>Desktop</span>
+                </h5>
+            </div>
+            <div class="d-flex ">
+                <div class="categories d-flex flex-column bg-black text-white py-3 px-3">
+                    <h5 class="larg">Categories</h5>
+
+                    <ul class="nav d-flex flex-column">
+                        <li class="nav-item d-flex justify-content-start"><a href="#"
+                                class="k medium text-white">Desktop</a>
+                            <ul class="nav d-flex flex-column mt-1">
+                                <li><a href="#" class="medium text-white">PC</a></li>
+                                <li><a href="#" class="medium text-white">MAC</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item d-flex justify-content-start"><a href="#"
+                                class="k medium text-white">Laptop</a>
+                            <ul class="nav d-flex flex-column mt-1">
+                                <li><a href="#" class="medium text-white">MAC</a></li>
+                                <li><a href="#" class="medium text-white">WINDOW</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item d-flex justify-content-start"><a href="#"
+                                class="k medium text-white">Laptop</a>
+                            <ul class="nav d-flex flex-column mt-1">
+                                <li><a href="#" class="medium text-white">MAC</a></li>
+                                <li><a href="#" class="medium text-white">WINDOW</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="product-list row">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!--_____Footer_____-->
+    <div class="container-fluid footer   mt-4 mb-3">
+        <div class="container    ">
+            <div class="row top-row-contact border ">
+                <div class="col-12 col-sm-12 col-md-4 d-flex justify-content-md-center py-md-3 py-2 ">
+                    <img src="image/icon-mail.png" class="img-fluid big-img-icon" alt="">
+                    <div class="d-flex    ">
+                        <h5 class="text-maroon larg big-img-icon-text question ">Do you have any
+                            question?<br><span class="medium text-dark">email.example@gmail.com </span></h5>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 d-flex justify-content-md-center py-md-3 py-2 ">
+                    <img src="image/icon-phone2.png" class="img-fluid big-img-icon mt-1" alt="">
+                    <div class="d-flex    ">
+                        <h5 class="text-maroon larg big-img-icon-text " style="margin-top:10px; margin-left:5px;">
+                            800-140-100<br><span class="medium text-dark">Mon - Fri: 8:00 - 17:00</span></h5>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 d-flex justify-content-md-center py-md-3 py-2 ">
+                    <div class=" d-flex justify-content-center align-items-center">
+                        <h5 class="medium py-1 px-3      text-white contact-form">CONTACT FORM</h5>
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-sm-12 col-md-3 d-flex  py-2 py-md-3 px-4 border flex-column justify-content-center">
+                    <img src="image/logo-footer.png" class="img-fluid w-75 mb-3 " alt="">
+                    <p class="medium">PO Box 16122 Collins Street <br>Victoria 8007 Australia</p>
+                </div>
+                <div
+                    class="col-12 col-sm-12 col-md-3 d-flex  py-2 py-md-3 px-4 border  flex-column justify-content-center">
+                    <p><span class="border-bottom border-danger border-3 larg">Information</span></p>
+                    <ul class="nav flex-column medium ">
+                        <li><a href="#" class=" nav-link nav-link-footer">About
+                                us</a>
+                        </li>
+                        <li><a href="#" class=" nav-link nav-link-footer">Delivery
+                                information</a>
+                        </li>
+                        <li><a href="#" class=" nav-link nav-link-footer">Privacy
+                                Policy</a></li>
+                    </ul>
+                </div>
+                <div
+                    class="col-12 col-sm-12 col-md-3 d-flex  py-2 py-md-3 px-4 border flex-column justify-content-center">
+                    <p><span class="border-bottom border-danger  border-3 larg">My account</span></p>
+                    <ul class="nav flex-column medium ">
+                        <li><a href="#" class=" nav-link nav-link-footer">My
+                                account</a>
+                        </li>
+                        <li><a href="#" class=" nav-link nav-link-footer">Order
+                                History</a>
+                        </li>
+                        <li><a href="#" class=" nav-link nav-link-footer">Wish
+                                List</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 d-flex  py-3 px-4 border flex-column justify-content-center">
+                    <p><span class="border-bottom border-danger border-3 larg">Custom links</span></p>
+                    <ul class="nav flex-column medium ">
+                        <li><a href="#" class="  nav-link nav-link-footer ">Terms &
+                                Conditions</a>
+                        </li>
+                        <li><a href="#" class="  nav-link nav-link-footer">Contact
+                                Us</a>
+                        </li>
+                        <li><a href="#" class="  nav-link nav-link-footer">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 d-flex justify-content-md-center py-md-3 py-2 ">
+                    <img src="image/icon-free-shipping.png" class="img-icon img-fluid ml-1" alt="">
+                    <div class="d-flex    ">
+                        <h5 class="text-maroon medium question ">Free shipping & Return<br><span
+                                class="small text-dark">For all orders over $500 </span></h5>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 d-flex justify-content-md-center py-md-3 py-2 ">
+                    <img src="image/icon-money.png" class="img-fluid img-icon ml-1" alt="">
+                    <div class="d-flex    ">
+                        <h5 class="text-maroon medium mt-2 ">Money back
+                            guarantee<br><span class="small text-dark">
+                                Money back guarantee
+
+                                100% money back guarante
+                            </span></h5>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 d-flex justify-content-md-center py-md-3 py-2 ">
+                    <img src="image/icon-support.png" class="img-fluid img-icon ml-1" alt="">
+                    <div class="d-flex    ">
+                        <h5 class="text-maroon medium mt-2 ">Support 24/7<br><span class="small text-dark">
+                                We answer for question all time
+                            </span></h5>
+                    </div>
+                </div>
+            </div>
+            <b class="small">
+                <hr>Copyright © 2015, Your Store, All Rights Reserved.
+            </b>
+        </div>
+    </div>
+
+
+    <!-- owel carousel include JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/cartItems.js"></script>
+
+</body>
+
+</html>

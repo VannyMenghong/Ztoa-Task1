@@ -36,6 +36,10 @@
   font-size: 18px;
 }
 
+.big {
+  font-size: 25px;
+}
+
 .bold {
   font-weight: 550;
 }

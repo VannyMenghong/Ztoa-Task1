@@ -45,6 +45,10 @@ button, button:focus {
   font-size: 18px;
 }
 
+.big {
+  font-size: 25px;
+}
+
 .bold {
   font-weight: 550;
 }
@@ -511,6 +515,7 @@ body {
   background-color: #e55a19;
 }
 
+/*__________________Product Page________________*/
 /*Responsive */
 @media only screen and (max-width: 1000px) {
   .contact, .navigation, .drop-item {
